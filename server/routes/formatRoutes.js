@@ -3,6 +3,6 @@ const router = require("express").Router();
 const { formatNotes } = require("../controllers/formatController");
 
 // Make this /api/formatNotes accessible.
-router.get("/formatNotes", formatNotes);
+router.post("/formatNotes", formatNotes);
 
 module.exports = router;

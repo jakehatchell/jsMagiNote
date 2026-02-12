@@ -4,6 +4,7 @@ require("dotenv").config();
 
 // Import route files. This is the code that will route each url/http request to serve the correct files.
 const formatRoutes = require("./routes/formatRoutes");
+const noteRoutes = require("./routes/noteRoutes");
 
 // Create Express app.
 const app = express();
@@ -12,6 +13,8 @@ app.use(express.json());
 
 // All routes inside formatRoutes.js will start with /api.
 app.use("/api", formatRoutes);
+// Do the same for noteRoutes.js
+app.use("/api", noteRoutes);
 
 
 

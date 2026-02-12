@@ -26,6 +26,9 @@ exports.formatNotes = async(req, res) => {
         // Handle the response from OpenAI
         const markdown = completion.choices?.[0]?.message?.content ?? "";
 
+        // Debugging here; make sure we get valid response from API
+        console.log("OpenAI response:", completion);
+
         return res.json({ markdown });
     }
     catch (err) {
