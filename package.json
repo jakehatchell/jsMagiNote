@@ -1,0 +1,15 @@
+{
+  "name": "jsmaginote",
+  "version": "1.0.0",
+  "description": "An AI powered note app!",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Jake Hatchell",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.4",
+    "node": "^25.6.1"
+  }
+}
